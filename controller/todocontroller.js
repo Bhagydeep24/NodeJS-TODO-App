@@ -5,7 +5,7 @@ var data=[{item: 'Do homework'},{item: 'Buy groceries from walmart'}, {item: 'Go
 var urlencodedParser=bodyParser.urlencoded({extended:false});
 
 //setup connection to database
-mongoose.connect('mongodb+srv://root:root@todo-scewe.mongodb.net/NodeProject1?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<username>:<password>@todo-scewe.mongodb.net/<databasename>?retryWrites=true&w=majority')
 
 //Create a schema-this is like a blueprint
 var todoSchema=new mongoose.Schema({
